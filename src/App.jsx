@@ -1,14 +1,20 @@
 
-import './App.css'
+
+import Card from './shared/Card'
 
 function App() {
  
 
   return (
    <>
-   <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1></>
+   <div className='mx-4 my-8 font-onest grid grid-cols-4'>
+   <Card/>
+   <Card/>
+   <Card/>
+   <Card/>
+   </div>
+  </>
+    
   )
 }
 
