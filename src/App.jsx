@@ -1,7 +1,8 @@
 
 
+import ItemList from './common/Exam'
 import Incedent from './common/Incedent'
-import NewIncident from './common/NewIncident'
+
 import Card from './shared/Card'
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
    <Card/>
    </div>
    <Incedent/>
-   <NewIncident />
+   
+   <ItemList/>
   </div>
   </>
     

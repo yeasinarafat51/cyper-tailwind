@@ -27,94 +27,112 @@ export const pcture = [
     },
    
   ];
-export const incident = [
+export  const items = [
     {
-      src: "../Images/fi_67855.png",
+      src: "/fi_1818265.png",
       alt: "Partner 1",
-      title:"Avalanche"
+      title:"Avalanche",
+      id:1
     },
     {
-      src: "../Images/fi_8931510.png",
+      src: "/fi_8931510.png",
       alt: "Partner 2",
-       title:"Biological"
+       title:"Biological",
+       id:2
     },
     {
-      src: "../Images/fi_3496215.png",
+      src: "/fi_3496215.png",
       alt: "Partner 3",
-      title:"Blizzard"
+      title:"Blizzard",
+      id:3
     },
     {
-      src: "../Images/fi_2529995.png",
+      src: "/fi_2529995.png",
       alt: "Partner 4",
-       title:"Cold/Freezing"
+       title:"Cold/Freezing",
+       id:4
     },
     {
-      src: "../Images/fi_533057.png",
+      src: "/fi_533057.png",
       alt: "Partner 5",
-       title:"Drought"
+       title:"Drought",
+       id:5
     },
    
     {
-      src: "../Images/fi_1818265.png",
+      src: "/fi_1818265.png",
       alt: "Partner 2",
-       title:"Earthquake"
+       title:"Earthquake",
+       id:6
     },
     {
-      src: "../Images/fi_106063.png",
+      src: "/fi_106063.png",
       alt: "Partner 3",
-      title:"Flooding"
+      title:"Flooding",
+      id:7
     },
     {
-      src: "../Images/fi_66275.png",
+      src: "/fi_66275.png",
       alt: "Partner 4",
-       title:"Heat Wave"
+       title:"Heat Wave",
+       id:8
     },
     {
-      src: "../Images/fi_6157591.png",
+      src: "/fi_6157591.png",
       alt: "Partner 5",
-       title:"Hail"
+       title:"Hail",
+       id:9
     },
     {
-      src: "../Images/fi_9502782.png",
+      src: "/fi_9502782.png",
       alt: "Partner 4",
-       title:"Tulare County"
+       title:"Tulare County",
+       id:10
+
     },
     {
-      src: "../Images/fi_2165881.png",
+      src: "/fi_2165881.png",
       alt: "Partner 5",
-       title:"Lightning"
+       title:"Lightning",
+       id:11
     },
    
     {
-      src: "../Images/fi_15330449.png",
+      src: "/fi_15330449.png",
       alt: "Partner 2",
-       title:"Man Made"
+       title:"Man Made",
+       id:12
     },
     {
-      src: "../Images/fi_15330449 (1).png",
+      src: "/fi_15330449 (1).png",
       alt: "Partner 3",
-      title:"Mudslide"
+      title:"Mudslide",
+      id:13
     },
     {
-      src: "../Images/fi_3682921.png",
+      src: "/fi_3682921.png",
       alt: "Partner 4",
-       title:"Severe Storm"
+       title:"Severe Storm",
+       id:17
     },
     {
-      src: "../Images/fi_533077.png",
+      src: "/fi_533077.png",
       alt: "Partner 5",
-       title:"Strong Wind"
+       title:"Strong Wind",
+       id:14
     },
    
     {
-      src: "../Images/fi_10567288.png",
+      src: "/fi_10567288.png",
       alt: "Partner 3",
-      title:"Volcanic Eruption"
+      title:"Volcanic Eruption",
+      id:15
     },
     {
-      src: "../Images/fi_3661746.png",
+      src: "/fi_3661746.png",
       alt: "Partner 4",
-       title:"Tsunami"
+       title:"Tsunami",
+       id:16
     },
    
    
