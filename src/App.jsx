@@ -9,6 +9,7 @@ import Divider from "./common/Divider"
 import SearchSection from './common/SearchSection';
 // import ChatModal from './components/ChatModal';
 import Dashboard from './components/Dashboard';
+import Map from "./components/Map";
 import Textarea from "./components/Textarea";
 
 import User from './components/User';
@@ -44,7 +45,8 @@ function App() {
    {/* <ChatModal/> */}
    {/* <Divider searchtitle='New Incident'/> */}
    {/* <Button  className='bg-[#F26922]'>get stared</Button> */}
-   <Textarea/>
+   {/* <Textarea/> */}
+   <Map/>
   </div>
   </>
     
