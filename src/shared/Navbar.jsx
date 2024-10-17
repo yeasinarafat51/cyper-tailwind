@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="">
-            <img className='w-[131px] h-[36px]' src={logo} alt="./" />
+            <img className='w-[100%] h-[36px]  object-cover' src={logo} alt="./" />
         
         </div>
 
