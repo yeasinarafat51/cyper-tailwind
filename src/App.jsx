@@ -9,6 +9,7 @@ import Divider from "./common/Divider"
 import SearchSection from './common/SearchSection';
 // import ChatModal from './components/ChatModal';
 import Dashboard from './components/Dashboard';
+import Textarea from "./components/Textarea";
 
 import User from './components/User';
 
@@ -21,15 +22,15 @@ function App() {
 
   return (
    <>
-  <div className='  bg-[#E4E4E7]'>
-  <Router>
+  <div className='  bg-[#E4E4E7] m-auto'>
+  {/* <Router>
       <Navbar />
       <SearchSection searchtitle="Content"/>
       <Routes>
         <Route path="/dashboard" element={<Dashboard/>} />
         <Route path="/user" element={<User />} />
       </Routes>
-    </Router>
+    </Router> */}
   {/* <div className='mx-4 my-8 font-onest grid grid-cols-3'>
    <Card/>
    <Card/>
@@ -41,8 +42,9 @@ function App() {
    <ItemList/> */}
    
    {/* <ChatModal/> */}
-   <Divider searchtitle='New Incident'/>
+   {/* <Divider searchtitle='New Incident'/> */}
    {/* <Button  className='bg-[#F26922]'>get stared</Button> */}
+   <Textarea/>
   </div>
   </>
     
