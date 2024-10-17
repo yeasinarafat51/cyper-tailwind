@@ -16,15 +16,15 @@ function App() {
 
   return (
    <>
-  <div className='bg-slate-600 p-8'>
-  <Router>
+  <div className=''>
+  {/* <Router>
       <Navbar />
       <Routes>
         <Route path="/dashboard" element={<Dashboard/>} />
         <Route path="/user" element={<User />} />
       </Routes>
-    </Router>
-  <div className='mx-4 my-8 font-onest grid grid-cols-3'>
+    </Router> */}
+  {/* <div className='mx-4 my-8 font-onest grid grid-cols-3'>
    <Card/>
    <Card/>
    <Card/>
@@ -32,9 +32,9 @@ function App() {
    </div>
    <Incedent/>
    
-   <ItemList/>
+   <ItemList/> */}
    <SearchSection/>
-   <Button  className='bg-[#F26922]'>get stared</Button>
+   {/* <Button  className='bg-[#F26922]'>get stared</Button> */}
   </div>
   </>
     

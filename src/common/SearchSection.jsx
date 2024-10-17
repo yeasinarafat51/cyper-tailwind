@@ -4,7 +4,7 @@ import Button from './Button';
 
 const SearchSection = () => {
   return (
-    <section className="w-[1268px] h-[54px] flex justify-between items-center bg-[#E4E4E7]   shadow-lg">
+    <section className="w-[100%] lg:h-[54px] grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2   bg-[#E4E4E7]    shadow-lg">
       {/* Title */}
      <div className='w-[137px] h-[54px] '>
      <p className='font-[400px] text-[12px] text-[#71717A]'>Welcome back</p>
@@ -13,7 +13,7 @@ const SearchSection = () => {
      </div>
 
       {/* Search Bars */}
-      <div className=" flex  items-center gap-3.5">
+      <div className=" flex lg:justify-center justify-items-start  items-center gap-2">
         {/* First Search Bar */}
         <div className="flex  items-center p-3 gap-2 w-[190px] h-[42px] bg-white ">
         <FiSearch className="w-[18px]  top-2 right-3 text-gray-500" />
