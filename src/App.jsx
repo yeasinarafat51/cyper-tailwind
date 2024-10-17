@@ -1,7 +1,9 @@
 
 
+import Button from './common/Button';
 import ItemList from './common/Exam'
 import Incedent from './common/Incedent'
+import SearchSection from './common/SearchSection';
 import Dashboard from './components/Dashboard';
 import User from './components/User';
 
@@ -31,6 +33,8 @@ function App() {
    <Incedent/>
    
    <ItemList/>
+   <SearchSection/>
+   <Button  className='bg-[#F26922]'>get stared</Button>
   </div>
   </>
     
