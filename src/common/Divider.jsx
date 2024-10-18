@@ -4,10 +4,11 @@ import dvi2 from '../Images/Group 1171276282.png'
 // {/* <img src={dvi} className='w-[527px] h-[5px] my-8' alt="" /> */}
 import { FiSearch } from 'react-icons/fi'; // Search Icon
 import Button from './Button';
+import { Link } from 'react-router-dom';
 
-const Divider = ({searchtitle}) => {
+const Divider = ({searchtitle,link}) => {
   return (
-    <section className="w-[100%] lg:h-[70px] md:h-[70px] h-[120px] pb-4 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3   bg-[#E4E4E7]  xl:px-8 lg:px-8 md:px-8   shadow-lg">
+    <section className="w-[100%] lg:h-[70px] md:h-[70px] h-[180px] pb-4 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3   bg-[#E4E4E7]  xl:px-8 lg:px-8 md:px-8   shadow-lg">
     {/* Title */}
    <div className='flex items-center  justify-items-start  gap-2 '>
    <div>
@@ -24,10 +25,12 @@ const Divider = ({searchtitle}) => {
    </div>
 
     
-    <div className=" flex lg:justify-end justify-items-start  items-center gap-2 mb-2">
+    <div className=" flex lg:justify-end justify-items-start  items-center gap-2  mb-2">
      
       <Button className='bg-[#FAFAFA] text-[#71717A]'>Back</Button>
+      <Link to={link}>
       <Button className='bg-[#F26922] text-[#FAFAFA]'>Next step</Button>
+      </Link>
     </div>
   </section>
   )

@@ -35,6 +35,7 @@ function App() {
         <Route path="/incidents" element={<Incidents/>} />
         <Route path="/incident" element={<Incedent/>} />
         <Route path="/itemlist" element={<ItemList/>} />
+        <Route path="/textarea" element={<Textarea/>} />
 
         <Route path="/user" element={<User />} />
       </Routes>
