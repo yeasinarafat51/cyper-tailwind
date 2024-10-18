@@ -18,12 +18,13 @@ function App() {
   <div className='  bg-[#E4E4E7] '>
   <Router>
       <Navbar />
+      
      
       <Routes>
-        
-        <Route path="/dashboard" element={<Dashboard/>} />
-        <Route path="./" element={<Dashboard/>} />
-        <Route path="/incidents" element={<Incidents/>} />
+     
+       
+        <Route path="/" element={<Dashboard/>} />
+       <Route path="/incidents" element={<Incidents/>} />
         <Route path="/incident" element={<Incedent/>} />
         <Route path="/itemlist" element={<ItemList/>} />
         <Route path="/textarea" element={<Textarea/>} />

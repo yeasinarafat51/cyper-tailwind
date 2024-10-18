@@ -37,7 +37,7 @@ const Navbar = () => {
         {/* Links (visible on desktop) */}
         <div className="hidden md:flex gap-8 ">
           <Link
-            to="/dashboard"
+            to="/"
             className={`flex items-center space-x-2 ${
               activeLink === 'dashboard' ? 'font-semibold text-[#09090B]' : 'text-[#71717A]'
             }`}
