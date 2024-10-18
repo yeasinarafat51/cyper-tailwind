@@ -1,28 +1,28 @@
-import { useState } from 'react';
-import mod1 from '../Images/modlel1.png';
-import mod2 from '../Images/model2.png';
-import mod3 from '../Images/model3.png';
-import c from '../Images/Group 1171276281.png'; // Image for closed state (open button)
-import d from '../Images/Group 1171276282.png'; // Image for open state (close button)
+import { useState } from "react";
+import mod1 from "../Images/modlel1.png";
+import mod2 from "../Images/model2.png";
+import mod3 from "../Images/model3.png";
+import c from "../Images/Group 1171276281.png"; // Image for closed state (open button)
+import d from "../Images/Group 1171276282.png"; // Image for open state (close button)
 
 const ChatModal = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { id: 2, text: 'Lorem ipsum dolor sit general sac mascho werho' },
-    { id: 1, text: 'Lorem ipsum dolor sit general sac mascho werho' },
-    { id: 1, text: 'Lorem ipsum dolor sit general sac mascho werho' },
-    { id: 2, text: 'Lorem ipsum dolor sit general sac mascho werho' },
+    { id: 2, text: "Lorem ipsum dolor sit general sac mascho werho" },
+    { id: 1, text: "Lorem ipsum dolor sit general sac mascho werho" },
+    { id: 1, text: "Lorem ipsum dolor sit general sac mascho werho" },
+    { id: 2, text: "Lorem ipsum dolor sit general sac mascho werho" },
   ]);
-  const [newMessage, setNewMessage] = useState('');
+  const [newMessage, setNewMessage] = useState("");
 
   const toggleModal = () => {
     setIsOpen(!isOpen); // Toggle modal open/close
   };
 
   const handleSend = () => {
-    if (newMessage.trim() !== '') {
+    if (newMessage.trim() !== "") {
       setMessages([...messages, { id: messages.length + 1, text: newMessage }]);
-      setNewMessage(''); // Clear input field after sending
+      setNewMessage(""); // Clear input field after sending
     }
   };
 
@@ -31,7 +31,11 @@ const ChatModal = () => {
       {/* Button to trigger the chat modal */}
       <button onClick={toggleModal} className="text-white px-4 py-2 rounded-lg">
         {/* Conditionally render the image based on whether the modal is open or closed */}
-        <img className="w-[77px] h-[77px] text-white" src={isOpen ? d : c} alt="Chat Button" />
+        <img
+          className="w-[77px] h-[77px] text-white"
+          src={isOpen ? d : c}
+          alt="Chat Button"
+        />
       </button>
 
       {/* Chat Modal */}
@@ -47,7 +51,7 @@ const ChatModal = () => {
               </button>
             </div>
 
-            {/* Modal Body - Chat Messages */}
+            {/* Modal Body -input Chat Messages */}
             <div className="flex-1 p-4 overflow-y-auto">
               <div className="space-y-3">
                 {messages.map((message, index) => (
@@ -55,8 +59,8 @@ const ChatModal = () => {
                     key={index}
                     className={`p-2 rounded-lg w-[213px] ${
                       message.id % 2 === 0
-                        ? 'bg-[#3F3F46] text-white float-right'
-                        : 'bg-blue-200 float-left'
+                        ? "bg-[#3F3F46] text-white float-right"
+                        : "bg-blue-200 float-left"
                     }`}
                   >
                     {message.text}
@@ -74,7 +78,7 @@ const ChatModal = () => {
                   placeholder="Type your message..."
                   value={newMessage}
                   onChange={(e) => setNewMessage(e.target.value)}
-                  onKeyDown={(e) => e.key === 'Enter' && handleSend()}
+                  onKeyDown={(e) => e.key === "Enter" && handleSend()}
                 />
               </div>
               <div className="flex justify-between items-center my-2">
