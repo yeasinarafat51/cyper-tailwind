@@ -20,6 +20,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Incidents from "./Pages/Incidents";
 import Incedent from "./common/Incedent";
 import ItemList from "./common/NewIncident";
+import Locations from "./Pages/Locations";
 
 function App() {
  
@@ -37,6 +38,7 @@ function App() {
         <Route path="/itemlist" element={<ItemList/>} />
         <Route path="/textarea" element={<Textarea/>} />
         <Route path="/map" element={<Map/>} />
+        <Route path="/locations" element={<Locations/>} />
 
         <Route path="/user" element={<User />} />
       </Routes>
