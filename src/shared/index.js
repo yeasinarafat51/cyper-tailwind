@@ -137,3 +137,28 @@ export  const items = [
    
    
   ];
+
+  export const itemsincident = [
+    {
+      src: "/public/Frame.png",
+      alt: "Partner 1",
+      title:"What type of incident?",
+      para:"Choose the category that best describes the incident."
+    },
+    {
+      src: "/public/Frame (1).png",
+      alt: "Partner 2",
+      title:"Tell us about the incident?",
+      para:"Let’s connect the dots and see where to start."
+    },
+    {
+      src: "/public/Frame (2).png",
+      alt: "Partner 3",
+      title:"Where did the incident occur?",
+      para:"Lorem ipsum dolar sit general sac mascho werho"
+    },
+   
+   
+  ];
+
+  

@@ -18,6 +18,7 @@ import User from './components/User';
 import Navbar from './shared/Navbar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Incidents from "./Pages/Incidents";
+import Incedent from "./common/Incedent";
 
 function App() {
  
@@ -31,6 +32,7 @@ function App() {
       <Routes>
         <Route path="/dashboard" element={<Dashboard/>} />
         <Route path="/incidents" element={<Incidents/>} />
+        <Route path="/incident" element={<Incedent/>} />
 
         <Route path="/user" element={<User />} />
       </Routes>

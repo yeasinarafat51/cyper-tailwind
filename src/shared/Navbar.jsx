@@ -110,7 +110,7 @@ const Navbar = () => {
 
       {/* Mobile Menu (visible when toggled) */}
       {isOpen && (
-        <div className="md:hidden flex flex-col mt-4 space-y-4">
+        <div className="md:hidden fixed flex flex-col mt-4 space-y-4 bg-black bg-opacity-50 p-12">
           <Link
             to="/dashboard"
             className={`flex items-center space-x-2 ${
@@ -119,18 +119,18 @@ const Navbar = () => {
             onClick={() => handleLinkClick('dashboard')}
           >
             
-            <span>Dashboard</span>
+            <span className='text-black'>Dashboard</span>
           </Link>
 
           <Link
             to="/incidents"
             className={`flex items-center space-x-2 ${
-              activeLink === 'incidents' ? 'font-semibold text-[#09090B]' : 'text-[#71717A]'
+              activeLink === 'incidents' ? 'font-semibold text-[#09090B]' : 'text-black'
             }`}
             onClick={() => handleLinkClick('incidents')}
           >
           
-            <span>Incidents</span>
+            <span className='text-black'>Incidents</span>
           </Link>
           <Link
             to="/locations"
@@ -140,7 +140,7 @@ const Navbar = () => {
             onClick={() => handleLinkClick('locations')}
           >
            
-            <span>Locations</span>
+            <span  className='text-black'>Locations</span>
           </Link>
           <Link
             to="/activities"
@@ -150,7 +150,7 @@ const Navbar = () => {
             onClick={() => handleLinkClick('activities')}
           >
            
-            <span>Activities</span>
+            <span  className='text-black'>Activities</span>
           </Link>
           <Link
             to="/documents"
@@ -160,7 +160,7 @@ const Navbar = () => {
             onClick={() => handleLinkClick('documents')}
           >
            
-            <span>Documents</span>
+            <span  className='text-black'>Documents</span>
           </Link>
           <Link
             to="/cypher"
@@ -170,7 +170,7 @@ const Navbar = () => {
             onClick={() => handleLinkClick('cypher')}
           >
            
-            <span>Cypher AI</span>
+            <span  className='text-black'>Cypher AI</span>
           </Link>
         </div>
       )}

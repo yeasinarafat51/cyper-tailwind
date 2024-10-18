@@ -3,6 +3,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 
 import { FiSearch } from 'react-icons/fi'; // Search Icon
 import Button from './Button';
+import { Link } from "react-router-dom";
 
 const Searchincident = ({searchtitle,searchname}) => {
   return (
@@ -37,7 +38,9 @@ const Searchincident = ({searchtitle,searchname}) => {
           />
          
         </div>
+        <Link to='/incident'>
         <Button className='flex justify-center gap-2 items-center bg-[#F26922] text-[#FAFAFA]'><AiOutlinePlus  className="text-white w-[16px] h-[16px]"/>Cypher AI</Button>
+        </Link>
       </div>
     </section>
   );
