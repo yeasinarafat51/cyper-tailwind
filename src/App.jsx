@@ -24,14 +24,15 @@ function App() {
   return (
    <>
   <div className='  bg-[#E4E4E7] m-auto'>
-  {/* <Router>
+  <Router>
       <Navbar />
-      <SearchSection searchtitle="Content"/>
+     
       <Routes>
         <Route path="/dashboard" element={<Dashboard/>} />
         <Route path="/user" element={<User />} />
       </Routes>
-    </Router> */}
+    </Router>
+    {/* <SearchSection searchtitle="Content"/> */}
   {/* <div className='mx-4 my-8 font-onest grid grid-cols-3'>
    <Card/>
    <Card/>
@@ -46,7 +47,7 @@ function App() {
    {/* <Divider searchtitle='New Incident'/> */}
    {/* <Button  className='bg-[#F26922]'>get stared</Button> */}
    {/* <Textarea/> */}
-   <Map/>
+   {/* <Map/> */}
   </div>
   </>
     

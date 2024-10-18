@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
+import { AiOutlinePlus } from "react-icons/ai";
 
 import { FiSearch } from 'react-icons/fi'; // Search Icon
 import Button from './Button';
 
 const SearchSection = ({searchtitle}) => {
   return (
-    <section className="w-[100%] lg:h-[54px] grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2   bg-[#E4E4E7]  xl:px-8 lg:px-8 md:px-8      shadow-lg">
+    <section className="w-[100%] lg:h-[70px] grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 lg:pb-4  bg-[#E4E4E7]  xl:px-10 lg:px-10 md:px-8    shadow-lg">
       {/* Title */}
      <div className='w-[137px] h-[54px] '>
      <p className='font-[400px] text-[12px] text-[#71717A]'>Welcome back</p>
@@ -36,10 +37,11 @@ const SearchSection = ({searchtitle}) => {
           />
          
         </div>
-        <Button className='bg-[#F26922] text-[#FAFAFA]'>Cypher AI</Button>
+        <Button className='flex justify-center gap-2 items-center bg-[#F26922] text-[#FAFAFA]'>Cypher AI</Button>
       </div>
     </section>
   );
 };
 
 export default SearchSection;
+{/* <Button className='flex justify-center gap-2 items-center bg-[#F26922] text-[#FAFAFA]'><AiOutlinePlus  className="text-white w-[16px] h-[16px]"/>Cypher AI</Button> */}

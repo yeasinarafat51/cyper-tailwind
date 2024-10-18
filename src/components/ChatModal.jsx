@@ -31,7 +31,7 @@ const ChatModal = () => {
       {/* Button to trigger the chat modal */}
       <button
         onClick={toggleModal}
-        className=" text-white px-4 py-2 mt-96  rounded-lg"
+        className=" text-white px-4 py-2  rounded-lg"
       >
         <img className='w-[77px] h-[77px] text-white' src={c} alt="" />
 
@@ -39,7 +39,7 @@ const ChatModal = () => {
 
       {/* Chat Modal fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center*/}
       {isOpen && (
-        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center ">
+        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-start justify-end ">
           <div className="bg-white w-[331px] rounded-lg shadow-lg flex flex-col h-[530px] ">
             {/* Modal Header */}
             <div className=" h-[63px] py-[25px] px-[15px] bg-[#F26922] text-white p-4 flex justify-between items-center">

@@ -1,9 +1,16 @@
+import SearchSection from "../common/SearchSection"
+import Card from "../shared/Card"
+import ChatModal from "./ChatModal"
 
 
 const Dashboard = () => {
   return (
     <div>
-      <h1>dashboard</h1>
+     <SearchSection searchtitle='Dashboard'/>
+     <Card/>
+    <div className="bg-white flex justify-end items-center mb-8">
+    <ChatModal/>
+    </div>
     </div>
   )
 }
