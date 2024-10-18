@@ -4,7 +4,7 @@ import { itemscard } from '.'
 
 const Cardlocation = () => {
   return (
-    <div className='lg:w-[670px] bg-white py-8 flex flex-wrap lg:gap-3 gap-2 lg:pl-0 pl-16 md:pl-0'>
+    <div className='lg:w-[670px] bg-white py-8 flex flex-wrap lg:gap-3 gap-2 lg:pl-0 pl-4 md:pl-0'>
       {
         itemscard.map(card =>(<div key={card.alt} className=" w-[214.2px] h-[241.5px] rounded overflow-hidden shadow-sm bg-white">
           <img className="w-[214.2px] h-[177.1px] object-cover" src={card.src} alt={card.alt} />

@@ -14,7 +14,7 @@ const Searchloctation = ({searchname}) => {
      <p className='font-[400px] text-[12px] text-[#71717A]'>{searchname}</p>
      <div className="flex justify-start items-center gap-2">
         <img className="w-[25px] h-[25px]" src={tree} alt="./" />
-     <h2 className="text-[26px] font-semibold  ">DR-4699 March 2023 Severe Storms</h2>
+     <h2 className="lg:text-[26px] text-[16px] font-semibold  ">DR-4699 March 2023 Severe Storms</h2>
      </div>
      
      </div>
@@ -22,7 +22,7 @@ const Searchloctation = ({searchname}) => {
       {/* Search Bars */}
       <div className=" flex lg:justify-end justify-items-start  items-center gap-2">
         {/* First Search Bar */}
-        <div className="flex  items-center p-3 gap-2 w-[190px] h-[42px] bg-white ">
+        <div className="flex  items-center p-3 gap-2 lg:w-[190px] md:w-[190px] w-[170px] h-[42px] bg-white ">
         <FiSearch className="w-[18px]  top-2 right-3 text-gray-500" />
           <input
             type="text"
@@ -34,7 +34,7 @@ const Searchloctation = ({searchname}) => {
         </div>
 
         {/* Second Search Bar */}
-        <div className=" w-[190px] h-[42px]">
+        <div className=" lg:w-[190px] md:w-[190px] w-[170px] h-[42px]">
           <input
             type="text"
             placeholder="Sort By: Date modified"
@@ -43,7 +43,7 @@ const Searchloctation = ({searchname}) => {
          
         </div>
         <Link to='/incident'>
-        <Button className='flex justify-center gap-2 items-center bg-[#F26922] text-[#FAFAFA]'><AiOutlinePlus  className="text-white w-[16px] h-[16px]"/>New Location</Button>
+        <Button className='flex justify-center gap-2 items-center bg-[#F26922] text-[#FAFAFA]'><AiOutlinePlus  className="text-white lg:w-[16px] md:w-[16px] w-[12px] h-[16px]"/>New Location</Button>
         </Link>
       </div>
     </section>
