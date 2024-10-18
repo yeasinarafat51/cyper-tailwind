@@ -65,7 +65,7 @@ const ChatModal = () => {
               </div>
             </div>
 
-            {/* Modal Footer - Input and Send Button */}
+            {/* Modal Footer -  and Send Button */}
             <div className="p-4 border-t border-gray-300">
               <div className="flex items-center space-x-2">
                 <input
