@@ -1,6 +1,6 @@
 import SearchSection from "../common/SearchSection"
 import Card from "../shared/Card"
-import ChatModal from "./ChatModal"
+import ChatModal from "../components/ChatModal"
 
 
 const Dashboard = () => {

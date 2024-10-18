@@ -8,7 +8,7 @@ import Divider from "./common/Divider"
 // import Incedent from './common/Incedent'
 import SearchSection from './common/SearchSection';
 // import ChatModal from './components/ChatModal';
-import Dashboard from './components/Dashboard';
+import Dashboard from './Pages/Dashboard';
 import Map from "./components/Map";
 import Textarea from "./components/Textarea";
 
@@ -17,6 +17,7 @@ import User from './components/User';
 // import Card from './shared/Card'
 import Navbar from './shared/Navbar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Incidents from "./Pages/Incidents";
 
 function App() {
  
@@ -29,6 +30,8 @@ function App() {
      
       <Routes>
         <Route path="/dashboard" element={<Dashboard/>} />
+        <Route path="/incidents" element={<Incidents/>} />
+
         <Route path="/user" element={<User />} />
       </Routes>
     </Router>
