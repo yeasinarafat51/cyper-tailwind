@@ -26,7 +26,7 @@ function App() {
 
   return (
    <>
-  <div className='  bg-[#E4E4E7] m-auto'>
+  <div className='  bg-[#E4E4E7] '>
   <Router>
       <Navbar />
      
@@ -36,6 +36,7 @@ function App() {
         <Route path="/incident" element={<Incedent/>} />
         <Route path="/itemlist" element={<ItemList/>} />
         <Route path="/textarea" element={<Textarea/>} />
+        <Route path="/map" element={<Map/>} />
 
         <Route path="/user" element={<User />} />
       </Routes>

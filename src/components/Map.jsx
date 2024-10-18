@@ -1,13 +1,17 @@
+import Divider from '../common/Divider';
 import bg1 from '../Images/map.png';
 import { FiSearch } from 'react-icons/fi'; // Search Icon
 
 const Map = () => {
   return (
-    <div className='mx-16 my-8 space-y-2'>
+   <div>
+    <Divider/>
+    <div className='flex justify-center items-center bg-white  '>
+    <div className='mx-8 my-8 space-y-2'>
          <h1 className="text-[24px] font-[700px]">Where’s the incident?</h1>
-         <p className=" w-[518px] text-[14px] font-[400px] text-[#71717A]">Enter a GPS, address. or pin point on the map. Try to be as accurate as possible, or click:Jurisdiction Wide</p>
+         <p className=" lg:w-[518px] text-[14px] font-[400px] text-[#71717A]">Enter a GPS, address. or pin point on the map. Try to be as accurate as possible, or click:Jurisdiction Wide</p>
       <div 
-        className="w-[752px] h-[490px]  bg-cover bg-center"
+        className="w-lg:w-[752px] md:w-[600px] w-[400px] h-[490px]  bg-cover bg-center"
         style={{ backgroundImage: `url(${bg1})` }}  
       >
       <div className='mx-2 py-2 space-y-2'>
@@ -34,6 +38,8 @@ const Map = () => {
       </div>
       </div>
     </div>
+    </div>
+   </div>
   );
 };
 

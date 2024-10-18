@@ -4,7 +4,7 @@ import Divider from "../common/Divider"
 const Textarea = () => {
   return (
   <div>
-    <Divider/>
+    <Divider searchtitle='New Incident' link='/map'/>
      <div className="flex justify-center bg-white px-4 py-8">
 
      <div className="bg-white">
