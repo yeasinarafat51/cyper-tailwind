@@ -4,7 +4,7 @@ import img from '../Images/Rectangle 420102.png'
 const ActiveDocument = ({title, name}) => {
   return (
     <div>
-    <div className='flex justify-between items-center py-2'>
+    <div className='flex justify-between items-center py-2 '>
     <h2 className="text-[14px] font-semibold  ">{title}</h2>
     <p className='font-[400px] text-[14px] text-[#71717A]'>See all</p>
 

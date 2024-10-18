@@ -12,7 +12,7 @@ const Locations = () => {
     <div>
         <Searchloctation searchname='Incidents - DR-4699 March 2023 Severe Storms '/>
 
-        <div className='bg-white grid lg:grid-cols-2 grid-cols-1 px-2'>
+        <div className='bg-white grid lg:grid-cols-2 grid-cols-1 px-2 lg:pl-8  md:pl-8 mb-8'>
             {/* location */}
             <div className='space-y-9'>
                 {/* loca1 */}
@@ -36,23 +36,30 @@ const Locations = () => {
 
 
                 </div>
+                <hr />
                 {/* loca1 */}
-                <div className='lg:w-[677px] lg:h-[77px]'>
+                <div className=' '>
                    <h2 className="text-[14px] font-semibold  ">Description</h2>
-                   <p className='font-[400px] text-[16px] text-[#71717A]'>Lorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werho</p>
+                   <p className='lg:w-[677px] lg:h-[77px] font-[400px] text-[16px] text-[#71717A]'>Lorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werho</p>
                    </div>
+                 
 
                      {/* location-part */}
+                     <hr/>
+                    
            <div>
+            
            <h2 className="text-[14px] font-semibold  ">Locations</h2>
            <Cardlocation/>
            </div>
             
             {/* location-part */}
+            <hr/>
 
             {/* activites */}
            <ActiveDocument title='Activities' name='Activity name'/>
             {/* activites */}
+            <hr/>
             {/* document */}
             <ActiveDocument title='Documents' name='Document name'/>
             {/* document */}
