@@ -5,7 +5,7 @@ import { FiSearch } from 'react-icons/fi'; // Search Icon
 const Map = () => {
   return (
    <div>
-    <Divider/>
+    <Divider back='/map' step='Finish' />
     <div className='flex justify-center items-center bg-white  '>
     <div className='mx-8 my-8 space-y-2'>
          <h1 className="text-[24px] font-[700px]">Where’s the incident?</h1>

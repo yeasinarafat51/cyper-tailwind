@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Searchincident = ({searchtitle,searchname}) => {
   return (
-    <section className="w-[100%] lg:h-[70px] grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 lg:pb-4  bg-[#E4E4E7]  xl:px-10 lg:px-10 md:px-8    shadow-lg">
+    <section className="w-[100%] lg:h-[70px] h-[120px] grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 pb-4  bg-[#E4E4E7]  xl:px-10 lg:px-10 md:px-8  pl-4  shadow-lg">
       {/* Title */}
      <div className='w-[137px] h-[54px] '>
      <p className='font-[400px] text-[12px] text-[#71717A]'>{searchname}</p>

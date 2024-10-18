@@ -11,7 +11,7 @@ const ItemList = () => {
 
   return (
    <div>
-     <Divider searchtitle='New Incident' link='/textarea'/>
+     <Divider searchtitle='New Incident' link='/textarea' back='/itemlist' step='Next step'/>
      <div className='bg-white'>
      
      <h1 className="text-[32px] font-bold text-center py-6">
