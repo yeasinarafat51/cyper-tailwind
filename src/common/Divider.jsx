@@ -7,7 +7,7 @@ import Button from './Button';
 
 const Divider = ({searchtitle}) => {
   return (
-    <section className="w-[100%] lg:h-[54px] grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 pb-[6px]  bg-[#E4E4E7]  xl:px-8 lg:px-8 md:px-8   shadow-lg">
+    <section className="w-[100%] lg:h-[70px] md:h-[70px] h-[120px] pb-4 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3   bg-[#E4E4E7]  xl:px-8 lg:px-8 md:px-8   shadow-lg">
     {/* Title */}
    <div className='flex items-center  justify-items-start  gap-2 '>
    <div>

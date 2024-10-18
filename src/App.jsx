@@ -19,6 +19,7 @@ import Navbar from './shared/Navbar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Incidents from "./Pages/Incidents";
 import Incedent from "./common/Incedent";
+import ItemList from "./common/NewIncident";
 
 function App() {
  
@@ -33,6 +34,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard/>} />
         <Route path="/incidents" element={<Incidents/>} />
         <Route path="/incident" element={<Incedent/>} />
+        <Route path="/itemlist" element={<ItemList/>} />
 
         <Route path="/user" element={<User />} />
       </Routes>

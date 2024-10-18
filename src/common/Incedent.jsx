@@ -2,6 +2,7 @@
 import { itemsincident } from '../shared'
 import divi from '../Images/Group 1171276283.png'
 import Button from './Button'
+import { Link } from 'react-router-dom'
 
 const Incedent = () => {
   return (
@@ -26,7 +27,10 @@ const Incedent = () => {
       }
     </div>
     <div className='flex justify-center py-16'>
-      <Button className=' bg-[#F26922] text-[#FAFAFA]'>Get started</Button>
+     <Link to='/itemlist'>
+     <Button className=' bg-[#F26922] text-[#FAFAFA]'>Get started</Button>
+     
+     </Link>
     </div>
    </div>
   )

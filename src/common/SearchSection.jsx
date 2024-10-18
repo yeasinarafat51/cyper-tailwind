@@ -6,7 +6,7 @@ import Button from './Button';
 
 const SearchSection = ({searchtitle}) => {
   return (
-    <section className="w-[100%] lg:h-[70px] grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 lg:pb-4  bg-[#E4E4E7]  xl:px-10 lg:px-10 md:px-8    shadow-lg">
+    <section className="w-[100%] lg:h-[70px] md:h-[70px] h-[120px] pb-4  grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2   bg-[#E4E4E7]  xl:px-10 lg:px-10 md:px-8    shadow-lg">
       {/* Title */}
      <div className='w-[137px] h-[54px] '>
      <p className='font-[400px] text-[12px] text-[#71717A]'>Welcome back</p>

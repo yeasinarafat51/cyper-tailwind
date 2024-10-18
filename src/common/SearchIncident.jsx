@@ -39,7 +39,7 @@ const Searchincident = ({searchtitle,searchname}) => {
          
         </div>
         <Link to='/incident'>
-        <Button className='flex justify-center gap-2 items-center bg-[#F26922] text-[#FAFAFA]'><AiOutlinePlus  className="text-white w-[16px] h-[16px]"/>Cypher AI</Button>
+        <Button className='flex justify-center gap-2 items-center bg-[#F26922] text-[#FAFAFA]'><AiOutlinePlus  className="text-white w-[16px] h-[16px]"/>New Incident</Button>
         </Link>
       </div>
     </section>
