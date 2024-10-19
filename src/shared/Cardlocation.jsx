@@ -6,7 +6,7 @@ const Cardlocation = () => {
       {itemscard.map((card) => (
         <div
           key={card.alt}
-          className=" w-[214.2px] h-[241.5px] rounded overflow-hidden shadow-sm bg-white"
+          className=" w-[214.2px] h-[241.5px] rounded overflow-hidden shadow-sm bg-white transform transition-all duration-300 hover:shadow-lg hover:scale-105"
         >
           <img
             className="w-[214.2px] h-[177.1px] object-cover"

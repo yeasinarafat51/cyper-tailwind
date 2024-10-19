@@ -9,7 +9,7 @@ const ActiveDocument = ({ title, name }) => {
         <p className="font-[400px] text-[14px] text-[#71717A]">See all</p>
       </div>
       <div className="space-y-4">
-        <div className="  flex justify-start items-center gap-4 lg:w-[679px] md::w-[679px] h-[108px] bg-[#E4E4E7] rounded overflow-hidden px-2 shadow-sm ">
+        <div className="  flex justify-start items-center gap-4 lg:w-[679px] md::w-[679px] h-[108px] bg-[#E4E4E7] rounded overflow-hidden px-2 shadow-sm transform transition-all duration-300 hover:shadow-lg hover:scale-105 ">
           <img className="w-[78px] h-[78px] object-cover" src={img} alt="/" />
           <div className="gap-4">
             <h1 className="font-semibold text-[16px] mt-2 mb-1">{name}</h1>
@@ -21,7 +21,7 @@ const ActiveDocument = ({ title, name }) => {
             </span>
           </div>
         </div>
-        <div className="  flex justify-start items-center gap-4 lg:w-[679px] md::w-[679px] h-[108px] bg-[#E4E4E7] rounded overflow-hidden px-2 shadow-sm ">
+        <div className="  flex justify-start items-center gap-4 lg:w-[679px] md::w-[679px] h-[108px] bg-[#E4E4E7] rounded overflow-hidden px-2 shadow-sm transform transition-all duration-300 hover:shadow-lg hover:scale-105 ">
           <img className="w-[78px] h-[78px] object-cover" src={img} alt="/" />
           <div className="gap-4">
             <h1 className="font-semibold text-[16px] mt-2 mb-1">
