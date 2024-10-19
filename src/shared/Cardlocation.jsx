@@ -13,14 +13,14 @@ const Cardlocation = () => {
             src={card.src}
             alt={card.alt}
           />
-          <div className="gap-4">
-            <h1 className="font-semibold text-[14px] mt-2 mb-1">
+          <div className="">
+            <h1 className="font-semibold text-[14px]  ">
               {card.title}
             </h1>
-            <p className="text-[#71717A] text-[12px] mb-2">
+            <p className="text-[#71717A] text-[12px] ">
               Tulare County, Los Angles, CA 23415
             </p>
-            <span className="text-[14px] font-semibold pt-2 ">
+            <span className="text-[14px] font-semibold  ">
               $1,456,654.00
             </span>
           </div>

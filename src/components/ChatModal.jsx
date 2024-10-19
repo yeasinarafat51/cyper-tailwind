@@ -31,11 +31,7 @@ const ChatModal = () => {
       {/* Button to trigger the chat modal */}
       <button onClick={toggleModal} className="text-white px-4 py-2 rounded-lg">
         {/* Conditionally render the image based on whether the modal is open or closed */}
-        <img
-          className="w-[77px] h-[77px] text-white"
-          src={isOpen ? d : c}
-          alt="Chat Button"
-        />
+        <img className="w-[77px] h-[77px]" src={c} alt="Chat Button" />
       </button>
 
       {/* Chat Modal */}
@@ -51,7 +47,7 @@ const ChatModal = () => {
               </button>
             </div>
 
-            {/* Modal Body -input Chat Messages */}
+            {/* Modal Body - Chat Messages */}
             <div className="flex-1 p-4 overflow-y-auto">
               <div className="space-y-3">
                 {messages.map((message, index) => (
@@ -69,7 +65,7 @@ const ChatModal = () => {
               </div>
             </div>
 
-            {/* Modal Footer - input and Send Button */}
+            {/* Modal Footer - Input and Send Button */}
             <div className="p-4 border-t border-gray-300">
               <div className="flex items-center space-x-2">
                 <input

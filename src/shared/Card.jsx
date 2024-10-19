@@ -6,18 +6,18 @@ const Card = () => {
       {itemscard.map((card) => (
         <div
           key={card.alt}
-          className="w-[306px] h-[342px] rounded overflow-hidden shadow-sm bg-white transform transition-all duration-300 hover:shadow-lg hover:scale-105"
+          className="w-[306px] h-[342px] rounded overflow-hidden shadow-sm bg-white transform transition-all duration-300 hover:shadow-lg hover:scale-105 "
         >
           <img
             className="w-[306px] h-[253px] object-cover"
             src={card.src}
             alt={card.alt}
           />
-          <div className="p-4">
+          <div className="p-2">
             <h1 className="font-semibold text-[16px] mt-2 mb-1">
               {card.title}
             </h1>
-            <p className="text-[#71717A] text-[14px] mb-2">
+            <p className="text-[#71717A] text-[14px] ">
               {card.location || "Tulare County, Los Angeles, CA 23415"}
             </p>
             <span className="text-[16px] font-semibold">
