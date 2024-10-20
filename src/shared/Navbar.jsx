@@ -19,174 +19,180 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-[100%] h-[59px] bg-[#E4E4E7] text-[#F4F4F5] py-1.5 lg:mx-0 md:mx-0 pl-4 ">
+    <nav className="w-full h-[59px] bg-[#E4E4E7] text-[#F4F4F5] py-1.5 px-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="">
-          <img
-            className="w-[100%] h-[36px]  object-cover"
-            src={logo}
-            alt="./"
-          />
+          <img className="w-auto h-[36px]" src={logo} alt="Logo" />
         </div>
 
         {/* Hamburger Menu Icon (visible on mobile only) */}
-        <div className="md:hidden" onClick={toggleMenu}>
+        <div className="md:hidden px-2" onClick={toggleMenu}>
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </div>
 
         {/* Links (visible on desktop) */}
-        <div className="hidden md:flex gap-8 ">
+        <div className="hidden md:flex gap-8 items-center">
           <Link
             to="/"
-            className={`flex items-center space-x-2 ${
+            className={`${
               activeLink === "dashboard"
                 ? "font-semibold text-[#09090B]"
                 : "text-[#71717A]"
             }`}
             onClick={() => handleLinkClick("dashboard")}
           >
-            <span>Dashboard</span>
+            Dashboard
           </Link>
 
           <Link
             to="/incidents"
-            className={`flex items-center space-x-2 ${
+            className={`${
               activeLink === "incidents"
                 ? "font-semibold text-[#09090B]"
                 : "text-[#71717A]"
             }`}
             onClick={() => handleLinkClick("incidents")}
           >
-            <span>Incidents</span>
+            Incidents
           </Link>
+
           <Link
             to="/locations"
-            className={`flex items-center space-x-2 ${
+            className={`${
               activeLink === "locations"
                 ? "font-semibold text-[#09090B]"
                 : "text-[#71717A]"
             }`}
             onClick={() => handleLinkClick("locations")}
           >
-            <span>Locations</span>
+            Locations
           </Link>
+
           <Link
             to="/activities"
-            className={`flex items-center space-x-2 ${
+            className={`${
               activeLink === "activities"
                 ? "font-semibold text-[#09090B]"
                 : "text-[#71717A]"
             }`}
             onClick={() => handleLinkClick("activities")}
           >
-            <span>Activities</span>
+            Activities
           </Link>
+
           <Link
             to="/documents"
-            className={`flex items-center space-x-2 ${
+            className={`${
               activeLink === "documents"
                 ? "font-semibold text-[#09090B]"
                 : "text-[#71717A]"
             }`}
             onClick={() => handleLinkClick("documents")}
           >
-            <span>Documents</span>
+            Documents
           </Link>
+
           <Link
             to="/cypher"
-            className={`flex items-center space-x-2 ${
+            className={`${
               activeLink === "cypher"
                 ? "font-semibold text-[#09090B]"
                 : "text-[#71717A]"
             }`}
             onClick={() => handleLinkClick("cypher")}
           >
-            <span>Cypher AI</span>
+            Cypher AI
           </Link>
         </div>
+
+        {/* Profile and Notifications */}
         <div className="flex justify-center items-center gap-2">
-          <img className="size-[40px]" src={noti} alt="./" />
-          <img className="size-[40px]" src={img} alt="./" />
+          <img className="w-6 h-6" src={noti} alt="Notification" />
+          <img className="w-6 h-6 rounded-full" src={img} alt="Profile" />
           <div>
-            <h1 className="text-black font-[600px] text-">Usman Zafar</h1>
-            <p className="text-black font-[400px] text-[14px]">
-              usmanzafar@gmail.com
-            </p>
+            <h1 className="text-black font-semibold">Usman Zafar</h1>
+            <p className="text-black font-normal text-[14px]">usmanzafar@gmail.com</p>
           </div>
         </div>
       </div>
 
       {/* Mobile Menu (visible when toggled) */}
       {isOpen && (
-        <div className="md:hidden fixed flex flex-col mt-4 space-y-4 bg-black bg-opacity-50 p-12">
-          <Link
-            to="/dashboard"
-            className={`flex items-center space-x-2 ${
-              activeLink === "dashboard"
-                ? "font-semibold text-[#09090B]"
-                : "text-[#71717A]"
-            }`}
-            onClick={() => handleLinkClick("dashboard")}
-          >
-            <span className="text-black">Dashboard</span>
-          </Link>
+        <div className="md:hidden fixed left-0 top-0 w-full h-full bg-black bg-opacity-50 z-50 flex flex-col justify-center items-center">
+          <div className="bg-white p-8 space-y-4 w-[80%] text-center rounded-lg">
+            <Link
+              to="/dashboard"
+              className={`${
+                activeLink === "dashboard"
+                  ? "font-semibold text-[#09090B]"
+                  : "text-[#71717A]"
+              }`}
+              onClick={() => handleLinkClick("dashboard")}
+            >
+              Dashboard
+            </Link>
 
-          <Link
-            to="/incidents"
-            className={`flex items-center space-x-2 ${
-              activeLink === "incidents"
-                ? "font-semibold text-[#09090B]"
-                : "text-black"
-            }`}
-            onClick={() => handleLinkClick("incidents")}
-          >
-            <span className="text-black">Incidents</span>
-          </Link>
-          <Link
-            to="/locations"
-            className={`flex items-center space-x-2 ${
-              activeLink === "locations"
-                ? "font-semibold text-[#09090B]"
-                : "text-[#71717A]"
-            }`}
-            onClick={() => handleLinkClick("locations")}
-          >
-            <span className="text-black">Locations</span>
-          </Link>
-          <Link
-            to="/activities"
-            className={`flex items-center space-x-2 ${
-              activeLink === "activities"
-                ? "font-semibold text-[#09090B]"
-                : "text-[#71717A]"
-            }`}
-            onClick={() => handleLinkClick("activities")}
-          >
-            <span className="text-black">Activities</span>
-          </Link>
-          <Link
-            to="/documents"
-            className={`flex items-center space-x-2 ${
-              activeLink === "documents"
-                ? "font-semibold text-[#09090B]"
-                : "text-[#71717A]"
-            }`}
-            onClick={() => handleLinkClick("documents")}
-          >
-            <span className="text-black">Documents</span>
-          </Link>
-          <Link
-            to="/cypher"
-            className={`flex items-center space-x-2 ${
-              activeLink === "cypher"
-                ? "font-semibold text-[#09090B]"
-                : "text-[#71717A]"
-            }`}
-            onClick={() => handleLinkClick("cypher")}
-          >
-            <span className="text-black">Cypher AI</span>
-          </Link>
+            <Link
+              to="/incidents"
+              className={`${
+                activeLink === "incidents"
+                  ? "font-semibold text-[#09090B]"
+                  : "text-[#71717A]"
+              }`}
+              onClick={() => handleLinkClick("incidents")}
+            >
+              Incidents
+            </Link>
+
+            <Link
+              to="/locations"
+              className={`${
+                activeLink === "locations"
+                  ? "font-semibold text-[#09090B]"
+                  : "text-[#71717A]"
+              }`}
+              onClick={() => handleLinkClick("locations")}
+            >
+              Locations
+            </Link>
+
+            <Link
+              to="/activities"
+              className={`${
+                activeLink === "activities"
+                  ? "font-semibold text-[#09090B]"
+                  : "text-[#71717A]"
+              }`}
+              onClick={() => handleLinkClick("activities")}
+            >
+              Activities
+            </Link>
+
+            <Link
+              to="/documents"
+              className={`${
+                activeLink === "documents"
+                  ? "font-semibold text-[#09090B]"
+                  : "text-[#71717A]"
+              }`}
+              onClick={() => handleLinkClick("documents")}
+            >
+              Documents
+            </Link>
+
+            <Link
+              to="/cypher"
+              className={`${
+                activeLink === "cypher"
+                  ? "font-semibold text-[#09090B]"
+                  : "text-[#71717A]"
+              }`}
+              onClick={() => handleLinkClick("cypher")}
+            >
+              Cypher AI
+            </Link>
+          </div>
         </div>
       )}
     </nav>

@@ -2,7 +2,7 @@ import { itemscard } from ".";
 
 const Card = () => {
   return (
-    <div className="bg-white py-8 flex flex-wrap lg:gap-4 gap-2 lg:pl-6 pl-16 md:pl-1">
+    <div className="bg-white py-8 flex flex-wrap lg:justify-normal md:justify-normal justify-center lg:gap-4 gap-2 lg:pl-6  md:pl-1">
       {itemscard.map((card) => (
         <div
           key={card.alt}
