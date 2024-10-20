@@ -8,7 +8,7 @@ const Dashboard = () => {
     <div>
      <SearchSection searchtitle='Dashboard'/>
      <Card/>
-    <div className="bg-white flex justify-end items-center mb-8">
+    <div className="bg-white   ">
     <ChatModal/>
     </div>
     </div>

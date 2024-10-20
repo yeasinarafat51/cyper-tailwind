@@ -29,14 +29,17 @@ const ChatModal = () => {
   return (
     <>
       {/* Button to trigger the chat modal */}
-      <button onClick={toggleModal} className="text-white px-4 py-2 rounded-lg">
+      <button
+        onClick={toggleModal}
+        className="fixed bottom-6 right-10 z-50 text-white px-4 py-2 rounded-lg"
+      >
         {/* Conditionally render the image based on whether the modal is open or closed */}
-        <img className="w-[77px] h-[77px]" src={c} alt="Chat Button" />
+        <img className="w-[77px] h-[77px]" src={isOpen ? d : c} alt="Chat Button" />
       </button>
 
       {/* Chat Modal */}
       {isOpen && (
-        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-start justify-end">
+        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-start justify-end z-40">
           <div className="bg-white w-[331px] rounded-lg shadow-lg flex flex-col h-[530px]">
             {/* Modal Header */}
             <div className="h-[63px] py-[25px] px-[15px] bg-[#F26922] text-white flex justify-between items-center">

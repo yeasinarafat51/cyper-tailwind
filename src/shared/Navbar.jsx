@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
 
         {/* Hamburger Menu Icon (visible on mobile only) */}
-        <div className="md:hidden px-2" onClick={toggleMenu}>
+        <div className="md:hidden " onClick={toggleMenu}>
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </div>
 
@@ -104,10 +104,7 @@ const Navbar = () => {
           >
             Cypher AI
           </Link>
-        </div>
-
-        {/* Profile and Notifications */}
-        <div className="flex justify-center items-center gap-2">
+          <div className="flex justify-center items-center gap-2">
           <img className="w-6 h-6" src={noti} alt="Notification" />
           <img className="w-6 h-6 rounded-full" src={img} alt="Profile" />
           <div>
@@ -115,14 +112,18 @@ const Navbar = () => {
             <p className="text-black font-normal text-[14px]">usmanzafar@gmail.com</p>
           </div>
         </div>
+        </div>
+
+        {/* Profile and Notifications */}
+       
       </div>
 
       {/* Mobile Menu (visible when toggled) */}
       {isOpen && (
-        <div className="md:hidden fixed left-0 top-0 w-full h-full bg-black bg-opacity-50 z-50 flex flex-col justify-center items-center">
-          <div className="bg-white p-8 space-y-4 w-[80%] text-center rounded-lg">
+        <div className="absolute z-[999999] md:hidden  left-0 top-14 w-full h-full bg-black bg-opacity-50  flex flex-col justify-center items-center">
+          <div className="bg-g p-4  space-y-4 flex flex-col w-[100%] text-center rounded-lg">
             <Link
-              to="/dashboard"
+              to="/"
               className={`${
                 activeLink === "dashboard"
                   ? "font-semibold text-[#09090B]"
@@ -192,6 +193,15 @@ const Navbar = () => {
             >
               Cypher AI
             </Link>
+            <div className="flex justify-center items-center gap-2">
+          <img className="w-6 h-6" src={noti} alt="Notification" />
+          <img className="w-6 h-6 rounded-full" src={img} alt="Profile" />
+          <div>
+            <h1 className="text-black font-semibold">Usman Zafar</h1>
+            <p className="text-black font-normal text-[14px]">usmanzafar@gmail.com</p>
+          </div>
+        </div>
+            
           </div>
         </div>
       )}
